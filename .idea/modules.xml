@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/javaSE.iml" filepath="$PROJECT_DIR$/javaSE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaSEPlus.iml" filepath="$PROJECT_DIR$/.idea/JavaSEPlus.iml" />
     </modules>
   </component>
 </project>
