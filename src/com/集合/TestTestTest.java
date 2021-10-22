@@ -1,7 +1,7 @@
 package com.集合;
 
-public class TestTest {
+public class TestTestTest {
     public static void main(String[] args) {
-        System.out.println("hello world");
+
     }
 }
