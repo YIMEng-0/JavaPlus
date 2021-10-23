@@ -1,6 +1,6 @@
-package com.注解;
+package com.注解.annotation1;
 
-@Deprecated
+
 public class AnnotationTest03 {
     public static void main(String[] args) {
         AnnotationTest03.doSome();

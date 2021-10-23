@@ -1,4 +1,4 @@
-package com.注解;
+package com.注解.annotation1;
 
 /**
  * @author Doraemon

@@ -1,12 +1,10 @@
-package com.注解;
+package com.注解.annotation1;
 
 /**
  * @author Doraemon
  * @version 1.0
  * @date 2021/10/21 10:20 下午
  */
-
-import java.security.PublicKey;
 
 /**
  * Annotation
