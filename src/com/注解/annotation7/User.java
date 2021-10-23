@@ -8,7 +8,7 @@ package com.注解.annotation7;
 
 @Id
 public class User {
-    int id;
+//    int id;
     String name;
     String password;
 }

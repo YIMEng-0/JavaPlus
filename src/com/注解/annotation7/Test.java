@@ -28,7 +28,7 @@ public class Test {
             }
 
             // 判断是否合法
-            if (!isRight) {
+            if (!isRight) { // 不合法了退出来了循环之后
                 throw new NotHasPropertyException("被@Id 标注的类必须有 int 类型的 Id 属性");
             }
         }
