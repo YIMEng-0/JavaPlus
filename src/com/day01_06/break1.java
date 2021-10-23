@@ -6,6 +6,8 @@ package com.day01_06;
 
 public class break1 {
     public static void main(String[] args){
-
+        System.out.println("hello world");
+        String s = "你好中国";
+        System.out.println(s);
     }
 }
