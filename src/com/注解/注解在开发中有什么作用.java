@@ -16,5 +16,7 @@ package com.注解;
  *      注解在程序中等同于一种标记
  */
 public class 注解在开发中有什么作用 {
+    public static void main(String[] args) {
 
+    }
 }
