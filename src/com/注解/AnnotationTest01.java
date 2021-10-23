@@ -17,6 +17,20 @@ import java.security.PublicKey;
  *
  *      }
  */
+
+/**
+ * 什么是元注解？
+ *      用来标注“注解类型” 的 “注解” 叫做元注解
+ *          Target
+ *              元注解，用来标注 “注解类型” 的 “注解”
+ *              出现的位置：
+ *                  @Target(ElementType.METHOD):表示 注解只能出现在方法的位置上面，修饰的注解只能出现在方法的上面
+ *          Retention
+ *                  是一个元注解，用来标注 “被标注的注解” ，
+ *                  注解下面的注解保存在什么位置上面
+ *                  @Retention(RetentionPolicy.SOURCE) 表示该注解只能保留在 Java 源文件中
+ *
+ */
 @MyAnnotation
 public class AnnotationTest01 {
     
