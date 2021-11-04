@@ -16,6 +16,10 @@ package com.static使用;
  *  为了方便的调用，此时不需要创建对象
  */
 
+/**
+ * 在static 里面就是类变量，形成的变量是类级别的，不是某一个对象的，
+ * 所形成的方法是类级别的，不是属于某一个方法的，是属于一类对象的；
+ */
 
 public class 实例语句块 {
 
@@ -52,8 +56,10 @@ public class 实例语句块 {
         main(6);
     }
 
-    // 进行方法的虫子啊
+    // 进行方法的啊
     public static void main(int i) {
         System.out.println(i);
+
+
     }
 }

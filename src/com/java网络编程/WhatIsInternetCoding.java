@@ -11,5 +11,7 @@ package com.java网络编程;
 
  */
 public class WhatIsInternetCoding {
-
+    public static void main(String[] args) {
+        
+    }
 }
