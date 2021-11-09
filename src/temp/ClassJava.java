@@ -45,5 +45,6 @@ public class ClassJava {
         Scanner scanner = new Scanner(System.in);
         String s1 = scanner.next();
         System.out.println(s1);
+        
     }
 }
