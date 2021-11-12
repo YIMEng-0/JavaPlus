@@ -13,7 +13,6 @@ public class ClassJava {
          * 使用了 = 进行字符串类型与 new 出来的字符串是不同的东西，new 会创建对象， = 只是会将字符串放在了字符串常量池中
          *
          */
-
         Integer a = 300;
         Integer b = 300;
         System.out.println(a.equals(b));
@@ -21,8 +20,6 @@ public class ClassJava {
     }
 
     public static void tetest() {
-
-
         Integer integer1 = 127;
         Integer integer2 = 127;
 
@@ -41,10 +38,8 @@ public class ClassJava {
             System.out.println("integer3:  " + integer3 + " != integer4: " + integer4);
         }
 
-
         Scanner scanner = new Scanner(System.in);
         String s1 = scanner.next();
         System.out.println(s1);
-        
     }
 }
