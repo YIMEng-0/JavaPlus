@@ -48,7 +48,6 @@ public class GetFileName {
         }
     }
 
-
     /**
      * 进行 txt 文件的创建
      * @param name  任意一个除去后缀的文件名字
