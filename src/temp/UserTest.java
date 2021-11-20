@@ -12,5 +12,6 @@ public class UserTest {
         System.out.println(testUser.age);
         System.out.println(testUser.name);
         System.out.println(testUser.description);
+        User user;
     }
 }
