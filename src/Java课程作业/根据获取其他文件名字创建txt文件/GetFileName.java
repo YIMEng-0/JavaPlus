@@ -11,10 +11,6 @@ import java.io.IOException;
 public class GetFileName {
     private static String path;
 
-    public static String getPath() {
-        return path;
-    }
-
     public static void setPath(String path) {
         GetFileName.path = path;
     }
@@ -51,7 +47,7 @@ public class GetFileName {
     /**
      * 进行 txt 文件的创建
      * @param name  任意一个除去后缀的文件名字
-     * @return
+     * @return  创建是否成功的标志
      * @throws IOException  输入输出报的异常，可能创建文件失败
      */
     public static boolean creatTxtFile(String name) throws IOException {

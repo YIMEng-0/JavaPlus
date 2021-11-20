@@ -20,7 +20,8 @@ public class ArrayListTest {
      */
 
     public static void main(String[] args) {
-        ArrayList<String> sites = new ArrayList<String>();
+        // 使用了泛型，可以对于插入的元素记性限制
+        ArrayList<String> sites = new ArrayList<>();
 
         // 使用add 函数进行元素的添加
         sites.add("www");

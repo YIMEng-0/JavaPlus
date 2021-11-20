@@ -34,11 +34,21 @@ public class Animal {
         this.color = color;
     }
 
-    // 三个参数的额构造器
+    // 三个参数的构造器
     public Animal(String animalName, String color, String weight) {
         this.animalName = animalName;
         this.color = color;
         this.weight = weight;
+    }
+
+    public static Animal getAnimalWeightInstance(String weight) {
+        // 使用了静态工厂方法，创建出来了一个只有体重的动物实例，在构造调用的时候，更加方便，不需要知道在什么位置填写什么样子的参数
+        // 直接使用相关的名字进行对象的创建，因为是静态的方法，可以使用
+        // 静态工厂在有很多个属性进行构造的类中是有显著的优势的
+        // 可以让使用类的人方便一些
+        Animal animal = new Animal();
+        animal.weight = weight;
+        return animal;
     }
 
     // 获取动物的名字
