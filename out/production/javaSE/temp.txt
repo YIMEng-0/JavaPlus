@@ -1,0 +1,55 @@
+1、Feature Smart
+Feature GDB
+
+FeatureDataBase
+    FeatureClass
+        SubType
+        Domain
+        rules
+
+2、relationship
+    Topological
+    spatial
+    General
+
+rulers vector Raster
+
+3 GenerationNetwork
+    Utility
+    Transportation
+
+
+4 Raster
+    Name（命名变量）
+    Ordinal(顺序)
+    Internal
+    Spatial
+    Surface
+        DEM
+        TIN
+
+    Counter
+    Slop
+    Aspect
+    Slightness
+
+5 Locator
+    x y z
+    address
+    place name
+    ZIP Cde
+    Route
+
+
+practice(进行软件的实现，使用 arcgis)（使用自己的例子）
+(做自己讲述的部分)
+
+数据源：
+    1、地理空间数据云（栅格数据）（30m）
+        栅格命名变量  等间距比例...
+    2、OSM.org(街道文件下载)（500m 的路网数据都是存在的）
+
+截止日期：12.31
+
+email:  fulaoshi521@126.com
+        姓名，学号；
