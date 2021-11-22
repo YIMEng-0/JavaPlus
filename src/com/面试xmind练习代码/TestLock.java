@@ -107,6 +107,7 @@ public class TestLock {
         Thread a = new Thread("A") {
             @Override
             public void run() {
+
                 /*// 测试 lock()
                 testLock.testLock(Thread.currentThread());*/
                 /*// 测试 lockInterruptibly()
