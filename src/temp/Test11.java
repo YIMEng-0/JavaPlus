@@ -27,5 +27,6 @@ public class Test11 {
         }
         long endTime = System.currentTimeMillis();
         System.out.println("StringBuffer类型操作耗时" + (endTime - startTime) + "毫秒");
+
     }
 }
