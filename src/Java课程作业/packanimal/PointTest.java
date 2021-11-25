@@ -7,8 +7,8 @@ package Java课程作业.packanimal;
  */
 public class PointTest {
     public static void main(String[] args) {
-        //
-        Point point = new Point();
-        point.calculatePolarCoordinates(6,8);
+        // 创建出来一个点的坐标
+        Point point = new Point(3,4);
+        point.calculatePolarCoordinates();
     }
 }
