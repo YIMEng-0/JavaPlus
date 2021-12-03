@@ -1,6 +1,6 @@
 package Java课程作业.packanimal;
 
-import javax.xml.bind.SchemaOutputResolver;
+import Java课程作业.hashCodeEquals.shape.Point;
 
 /**
  * @author Doraemon
