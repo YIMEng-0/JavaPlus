@@ -8,7 +8,7 @@ package Java课程作业.hashCodeEquals.shape;
 public class MyShapeTest {
     public static void main(String[] args) {
         double x1 = 0, x2 = 3, x3 = 3, y1 = 0, y2 = 0, y3 = 4;
-        Triangle triangle = new Triangle(x1, y1, x2, y2, x3, y3);
+        Shape triangle = new Triangle(x1, y1, x2, y2, x3, y3);
 
         double area = triangle.getArea();
         double perimeter = triangle.getPerimeter();

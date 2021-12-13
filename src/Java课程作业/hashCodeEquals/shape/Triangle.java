@@ -15,16 +15,16 @@ public class Triangle extends Shape {
     Point point3;
 
     public Triangle(double x1, double y1, double x2, double y2, double x3, double y3) {
-        point1 = new Point(x1, y1);
-        point2 = new Point(x2, y2);
-        point3 = new Point(x3, y3);
+        this.point1 = new Point(x1, y1);
+        this.point2 = new Point(x2, y2);
+        this.point3 = new Point(x3, y3);
     }
 
     // 获取三角形的周长
     @Override
     public double getPerimeter() {
         double perimeter;
-        perimeter = getLength(point1,point2) + getLength(point2,point3) + getLength(point3,point1);
+        perimeter = getLength(point1, point2) + getLength(point2, point3) + getLength(point3, point1);
         return perimeter;
     }
 
@@ -33,11 +33,11 @@ public class Triangle extends Shape {
     @Override
     public double getArea() {
         //三边长度
-        double a = getLength(point1,point2);
-        double b = getLength(point2,point3);
-        double c = getLength(point3,point1);
+        double a = getLength(point1, point2);
+        double b = getLength(point2, point3);
+        double c = getLength(point3, point1);
         double s;//面积
-        s = (float)((1.0/4.0)*Math.sqrt((a+b+c)*(a+b-c)*(a+c-b)*(b+c-a)));
+        s = (float) ((1.0 / 4.0) * Math.sqrt((a + b + c) * (a + b - c) * (a + c - b) * (b + c - a)));
 
         return s;
     }
