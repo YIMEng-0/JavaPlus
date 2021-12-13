@@ -1,4 +1,4 @@
-package Java课程作业.packanimal;
+package Java课程作业.hashCodeEquals.shape;
 
 
 /**

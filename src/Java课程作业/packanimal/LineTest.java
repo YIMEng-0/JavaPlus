@@ -1,5 +1,7 @@
 package Java课程作业.packanimal;
 
+import Java课程作业.hashCodeEquals.shape.Point;
+
 /**
  * @author Doraemon
  * @date 2021/11/24 7:16 下午

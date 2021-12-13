@@ -1,5 +1,7 @@
 package Java课程作业.packanimal;
 
+import Java课程作业.hashCodeEquals.shape.Point;
+
 /**
  * @author Doraemon
  * @version 1.0
