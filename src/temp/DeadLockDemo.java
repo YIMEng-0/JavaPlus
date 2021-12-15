@@ -11,6 +11,7 @@ import java.util.List;
 public class DeadLockDemo {
     private static Object resource1 = new Object();//资源 1
     private static Object resource2 = new Object();//资源 2
+    int a = 10;
 
     public static void main(String[] args) {
         new Thread(() -> {
@@ -63,5 +64,15 @@ public class DeadLockDemo {
          *      Thread[线程 1 ,     5   ,      main   ]
          *            [线程名称, 线程优先级, 线程所属线程组]
          */
+    }
+
+    public static void getA() {
+        int a = 1;
+        int b = 0;
+        int c = 0;
+        int d = a / b;
+        int e = b / c;
+        System.out.println(d);
+        System.out.println(e);
     }
 }
