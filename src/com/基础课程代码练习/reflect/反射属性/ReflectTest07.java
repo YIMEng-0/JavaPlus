@@ -25,7 +25,7 @@ public class ReflectTest07 {
         // 使用反射机制访问一个对象的属性（set get）
         // 找到类的字节码文件，使用类的字节码文件，创建出来对象
         Class studentClass = Class.forName("com.基础课程代码练习.reflect.反射属性.Student");
-        Object obj = studentClass.newInstance(); // obj 就是 Student 对象
+        Object obj = studentClass.newInstance(); // obj 就是 DeepStudent 对象
 
         // 获取属性，属性之间的区分，获取属性根据名字进行区分
         // 获取的时候，将属性的名字传递进去即可
@@ -39,7 +39,7 @@ public class ReflectTest07 {
         // 读取属性的值
         System.out.println(noField.get(obj)); // 111
 
-        System.out.println(noField); // public int com.基础课程代码练习.reflect.反射属性.Student.no
+        System.out.println(noField); // public int com.基础课程代码练习.reflect.反射属性.DeepStudent.no
 
         // 测试：可以访问私有的属性吗？
         Field nameField = studentClass.getDeclaredField("name");

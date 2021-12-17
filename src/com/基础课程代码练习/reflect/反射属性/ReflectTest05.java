@@ -12,7 +12,7 @@ import java.lang.reflect.Field;
  * 反射以下属性：
  * Field
  * <p>
- * 反射 Student 中所有的 Field
+ * 反射 DeepStudent 中所有的 Field
  */
 public class ReflectTest05 {
     public static void main(String[] args) {
