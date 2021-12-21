@@ -10,6 +10,8 @@ import java.math.BigDecimal;
 
 /**
  * https://blog.csdn.net/qq_35868412/article/details/89029288
+ *
+ * BigDecimal.valueOf() 可以做到比较精确的数据的转换，使得计算机中精确的表示金钱的数量，不会造成损失
  */
 public class temp6 {
     public static void main(String[] args) {

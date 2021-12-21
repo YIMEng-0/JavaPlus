@@ -7,7 +7,7 @@ package Java课程作业.考试题目练习.写出程序的输出;
  */
 
 /**
- * 关于变量的作用于的文章：
+ * 关于变量的作用域的文章：
  *  https://blog.csdn.net/qq_43555323/article/details/84987321
  */
 
@@ -54,6 +54,7 @@ public class Transmogrify {
         stage.performPlay();  // HappyActor
         stage.change();
         System.out.println("==");
+        // 在同一个对象上面操作，上面的对象发生了变化，下面的得到的是操作后的对象
         stage.performPlay();  // SadActor
     }
 }

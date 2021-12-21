@@ -22,7 +22,7 @@ public class temp1 {
     public static void main(String[] args) {
         String s1 = "235";
         String s2 = "10";
-        Integer value = Integer.valueOf(s1 + s2);
+        Integer value = Integer.valueOf(s1 + s2); // 23510
         value -= 10;
         System.out.println(value); // 23500
     }

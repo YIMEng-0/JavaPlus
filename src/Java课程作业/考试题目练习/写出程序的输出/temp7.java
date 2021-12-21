@@ -11,6 +11,8 @@ package Java课程作业.考试题目练习.写出程序的输出;
  *
  * 一个引用指向了一块堆内存，Java 在进行方法调用的时候，使用的是值传递，将对象的地址,进行传递给另外一个引用变量，变得是局部的引用变量
  * 自己本身是不会变化的；
+ *
+ * https://juejin.cn/post/6844903696996941832 值传递以及引用传递的相关代码演示
  */
 public class temp7 {
     public static void main(String[] args) {
@@ -20,6 +22,7 @@ public class temp7 {
         DataTest db = new DataTest(b);
 
         // 交换的是 dc1 以及 dc2 的数值，原来的 da db,的引用是没有发生变化的
+        // 因为是值传递，对于原来的数值是没有改变的
         swap(da, db);
         System.out.println("da " + da);
         System.out.println("db " + db);

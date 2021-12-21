@@ -1,6 +1,4 @@
-package Java课程作业.考试题目练习.按照要求解答下列问题;
-
-import sun.text.resources.en.FormatData_en_IE;
+package Java课程作业.考试题目练习.按照要求解答下列问题.运动员类设计;
 
 import java.util.Objects;
 

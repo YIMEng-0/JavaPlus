@@ -1,4 +1,4 @@
-package Java课程作业.考试题目练习.按照要求解答下列问题;
+package Java课程作业.考试题目练习.按照要求解答下列问题.运动员类设计;
 
 import sun.management.counter.perf.PerfInstrumentation;
 
