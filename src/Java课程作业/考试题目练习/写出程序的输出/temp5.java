@@ -25,7 +25,7 @@ public class temp5 {
     }
 
     static boolean test2(int value) {
-        System.out.println("test1("+value+")"); // test1(10)
+        System.out.println("test2("+value+")"); // test1(10)
         System.out.println("result:" + (value < 2)); // result:false
 
         return value < 2;

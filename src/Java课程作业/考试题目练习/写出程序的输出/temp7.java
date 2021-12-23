@@ -26,13 +26,13 @@ public class temp7 {
         swap(da, db);
         System.out.println("da " + da);
         System.out.println("db " + db);
-        da.show();
-        db.show();
+        da.show();  // 100
+        db.show();  // 50
 
         DataTest dc = db;
         fun(dc, 5); // 250 相当于 db * 5;
 
-        db.show();
+        db.show(); // 250
     }
 
     public static void fun(DataTest datat, int ix) {

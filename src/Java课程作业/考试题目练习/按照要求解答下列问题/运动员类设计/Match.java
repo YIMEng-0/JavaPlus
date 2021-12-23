@@ -14,7 +14,11 @@ public class Match {
         this.scores = scores;
     }
 
-    public Match(String lin_ma, String s, double v, double v1, double v2, double v3, double v4, double v5) {
+    // 接收相关参数，接收不确定的参数输入 double... a
+    // 接收名字，运动员编号，运动员的分数，用来创建出来一个比赛
+    public Match(String lin_ma, String s, double... a) {
+        this.athlete = new Athlete(lin_ma,s);
+        this.scores = new Scores(a);
     }
 
     public boolean getAthleteNo() {
