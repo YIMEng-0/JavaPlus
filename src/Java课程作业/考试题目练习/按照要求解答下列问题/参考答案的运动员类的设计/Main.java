@@ -48,7 +48,7 @@ public class Main {
         // 下面的使用了分数进行了排名，分数是从低到高依次进行排名的
         // 使用了 lambda表达式 的方式
         // https://zhidao.baidu.com/question/1388165155373946540.html 参考博客
-        // 了解 内部类以及 lambda 表达式 参考思维导图地址：
+        // https://github.com/YIMEng-0/JavaPlus/blob/main/javaSE%E5%A4%8D%E4%B9%A0%E5%87%86%E5%A4%87/java%E5%9F%BA%E7%A1%80/lanbda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%86%85%E9%83%A8%E7%B1%BB.xmind
         Arrays.sort(match, (m1, m2) -> Double.compare(m1.getFinalScore(), m2.getFinalScore()));
         for (Match m : match) {
             System.out.println(m.getAthleteNo() + "," + m.getName() + ":" + m.getFinalScore());
