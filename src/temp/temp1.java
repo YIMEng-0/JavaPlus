@@ -31,5 +31,7 @@ public class temp1<T> {
         for (int i = 0; i < c.length; i++) {
             System.out.println(c[i]);
         }
+
+        System.out.println(Math.pow(2,-127));
     }
 }

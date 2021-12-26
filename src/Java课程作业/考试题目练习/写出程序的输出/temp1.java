@@ -22,8 +22,10 @@ public class temp1 {
     public static void main(String[] args) {
         String s1 = "235";
         String s2 = "10";
-        Integer value = Integer.valueOf(s1 + s2); // 23510
-        value -= 10;
+
+        // 首先是两个字符串的拼接 然后得到其确定值
+        Integer value = Integer.valueOf(s1 + s2); // 23510 Integer 对象的字符串 Integer.value() 得到 Integer 类型字符串
+        value -= 10;  // 因为是 Integer 对象，所以在这里是可以进行减法的
         System.out.println(value); // 23500
     }
 }

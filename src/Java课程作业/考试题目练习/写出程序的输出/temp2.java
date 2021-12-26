@@ -19,6 +19,8 @@ public class temp2 {
             if (x == 30) {
                 break;
             }
+
+            // 下面的执行不了，也就是不能进行输出了
             System.out.println(x); // 10 20
         }
     }
