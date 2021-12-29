@@ -34,21 +34,26 @@ public class Main {
 
         System.out.println("===名字排名===");
 
-        // Arrays.sort（） 是 JDK 自己携带的工具方法，直接调用可以实现排序
-        // 首先Comparable< T t >是一个接口其中有一个抽象方法compareTo，当sort方法参数传入自定义对象数组时，
-        // 我们跟随源码可以看到最终是以Comparable< T t >这个接口关联到参数数组中对象所在的类中的compareTo方法进行排序的，
-        // 因此参数对象所对应的类必须实现Comparable< T t >接口，并且重写compareTo方法规定排序策略
-        // 在这个程序中，在 Match 里面是已经实现了接口，并且已经重写了 compareTo 方法的，所以可以进行自定义数据类型的排序操作
+        /**
+         * Arrays.sort（） 是 JDK 自己携带的工具方法，直接调用可以实现排序
+         * 首先Comparable< T t >是一个接口其中有一个抽象方法compareTo，当sort方法参数传入自定义对象数组时，
+         * 我们跟随源码可以看到最终是以Comparable< T t >这个接口关联到参数数组中对象所在的类中的compareTo方法进行排序的，
+         * 因此参数对象所对应的类必须实现Comparable< T t >接口，并且重写compareTo方法规定排序策略
+         * 在这个程序中，在 Match 里面是已经实现了接口，并且已经重写了 compareTo 方法的，所以可以进行自定义数据类型的排序操作
+         */
         Arrays.sort(match);
         for (Match m : match) {
             System.out.println(m.getAthleteNo() + "," + m.getName() + ":" + m.getFinalScore());
         }
 
         System.out.println("===分数排名===");
-        // 下面的使用了分数进行了排名，分数是从低到高依次进行排名的
-        // 使用了 lambda表达式 的方式
-        // https://zhidao.baidu.com/question/1388165155373946540.html 参考博客
-        // https://github.com/YIMEng-0/JavaPlus/blob/main/javaSE%E5%A4%8D%E4%B9%A0%E5%87%86%E5%A4%87/java%E5%9F%BA%E7%A1%80/lanbda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%86%85%E9%83%A8%E7%B1%BB.xmind
+
+        /**
+         * 下面的使用了分数进行了排名，分数是从低到高依次进行排名的
+         * 使用了 lambda表达式 的方式
+         * https://zhidao.baidu.com/question/1388165155373946540.html 参考博客
+         * https://github.com/YIMEng-0/JavaPlus/blob/main/javaSE%E5%A4%8D%E4%B9%A0%E5%87%86%E5%A4%87/java%E5%9F%BA%E7%A1%80/lanbda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%86%85%E9%83%A8%E7%B1%BB.xmind
+         */
         Arrays.sort(match, (m1, m2) -> Double.compare(m1.getFinalScore(), m2.getFinalScore()));
         for (Match m : match) {
             System.out.println(m.getAthleteNo() + "," + m.getName() + ":" + m.getFinalScore());

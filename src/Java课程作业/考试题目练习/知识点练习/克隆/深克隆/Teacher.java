@@ -1,11 +1,11 @@
-package 博客练习代码.克隆.浅克隆;
+package Java课程作业.考试题目练习.知识点练习.克隆.深克隆;
 
 /**
  * @author Doraemon
  * @date 2021/12/14 8:54 上午
  * @version 1.0
  */
-public class Teacher {
+public class Teacher implements Cloneable{
     private int id;
     private String name;
 
@@ -36,5 +36,10 @@ public class Teacher {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

@@ -1,12 +1,10 @@
-package 博客练习代码.克隆.深克隆;
+package Java课程作业.考试题目练习.知识点练习.克隆.深克隆;
 
 /**
  * @author Doraemon
  * @date 2021/12/14 8:52 上午
  * @version 1.0
  */
-
-import 博客练习代码.克隆.浅克隆.Student;
 
 /**
  * 下面测试的是深拷贝
