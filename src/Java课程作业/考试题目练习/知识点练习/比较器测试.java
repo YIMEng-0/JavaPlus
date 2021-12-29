@@ -23,7 +23,6 @@ public class 比较器测试 {
      *  3、通过匿名类实现一个接口，下面的两个比较器的代码就是实现了一个接口
      */
 
-
     Comparator<student> comparatorAge = new Comparator<student>() {
         @Override
         public int compare(student p1, student p2) {
