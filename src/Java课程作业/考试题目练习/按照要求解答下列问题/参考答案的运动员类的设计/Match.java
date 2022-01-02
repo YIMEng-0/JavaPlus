@@ -12,6 +12,13 @@ package Java课程作业.考试题目练习.按照要求解答下列问题.参�
  *
  * 泛型可以参数化类型
  */
+
+/**
+ * 下面使用了设定单一的规则进行大小的比较，这里使用了 Comparable 下面实现的方法是 compareTo(Match match);
+ *
+ * 按照运动员的名字进行比较 比较的结果使用整型的数据进行接收，用来下面的大小比较
+ * return athlete.getName().compareTo(match.athlete.getName());
+ */
 public class Match implements Comparable<Match> {
     private Athlete athlete;
     private Scores scores;

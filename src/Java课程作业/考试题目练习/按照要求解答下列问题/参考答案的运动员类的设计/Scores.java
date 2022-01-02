@@ -7,6 +7,7 @@ package Java课程作业.考试题目练习.按照要求解答下列问题.参�
  */
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Scores {
     private double difficulty;
@@ -17,7 +18,7 @@ public class Scores {
 
     public Scores(double d, double... s) {
         difficulty = d;
-        scores = s;
+        this.scores = s;
         min = minScore();
         max = maxScore();
         finalScore = scoresAlg();
@@ -56,6 +57,21 @@ public class Scores {
     public double getFinalScore() {
         return finalScore;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Scores scores = (Scores) o;
+        return Double.compare(scores.finalScore, finalScore) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(finalScore);
+    }
 }
-
-

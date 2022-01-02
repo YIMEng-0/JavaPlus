@@ -25,7 +25,7 @@ package Java课程作业.考试题目练习.按照要求解答下列问题.泛�
  * @param <T>
  *
  *     T... ts 表示同时可以传入多个不确定参数;具体是多少个，根据调用的那边确定
- *     <T extends Comparable<T> 表示传进来的泛型数据可以是 Comparable
+ *     <T extends Comparable<T>> 表示传进来的泛型数据可以是 Comparable
  */
 
 /**
@@ -69,6 +69,10 @@ public class CompareNum<T> {
      */
     public static <T extends Comparable<T>> void sort2(T... ts) {
         // 调用了 Arrays 类的 sort() 方法，这个方法可以使用 lambda 表达式简化代码
+        // 代码中传递了 一个 lambda 表达式，
         Arrays.sort(ts, (a, b) -> b.compareTo(a));
+
+        // 逆序进行排序
+        Arrays.sort(ts,(a,b) -> -1);
     }
 }

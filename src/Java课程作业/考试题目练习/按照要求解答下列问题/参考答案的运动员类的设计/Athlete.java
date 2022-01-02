@@ -25,4 +25,3 @@ public class Athlete {
         return athleteNo;
     }
 }
-

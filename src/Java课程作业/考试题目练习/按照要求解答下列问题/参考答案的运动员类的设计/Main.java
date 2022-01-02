@@ -41,7 +41,9 @@ public class Main {
          * 因此参数对象所对应的类必须实现Comparable< T t >接口，并且重写compareTo方法规定排序策略
          * 在这个程序中，在 Match 里面是已经实现了接口，并且已经重写了 compareTo 方法的，所以可以进行自定义数据类型的排序操作
          */
-        Arrays.sort(match);
+
+        // 下面的代码使用了 姓名进行了选手的排名
+        Arrays.sort(match,(m1,m2) -> m1.compareTo(m2)); // 按照选手的姓名排序
         for (Match m : match) {
             System.out.println(m.getAthleteNo() + "," + m.getName() + ":" + m.getFinalScore());
         }
@@ -55,6 +57,8 @@ public class Main {
          * https://github.com/YIMEng-0/JavaPlus/blob/main/javaSE%E5%A4%8D%E4%B9%A0%E5%87%86%E5%A4%87/java%E5%9F%BA%E7%A1%80/lanbda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%86%85%E9%83%A8%E7%B1%BB.xmind
          */
         Arrays.sort(match, (m1, m2) -> Double.compare(m1.getFinalScore(), m2.getFinalScore()));
+
+        // 获取最后的编号，名字，分数进行输出即可
         for (Match m : match) {
             System.out.println(m.getAthleteNo() + "," + m.getName() + ":" + m.getFinalScore());
         }
