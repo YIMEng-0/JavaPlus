@@ -43,7 +43,7 @@ public class Main {
          */
 
         // 下面的代码使用了 姓名进行了选手的排名
-        Arrays.sort(match,(m1,m2) -> m1.compareTo(m2)); // 按照选手的姓名排序
+        Arrays.sort(match, (m1, m2) -> m1.compareTo(m2)); // 按照选手的姓名排序
         for (Match m : match) {
             System.out.println(m.getAthleteNo() + "," + m.getName() + ":" + m.getFinalScore());
         }

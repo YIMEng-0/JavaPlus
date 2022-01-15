@@ -47,6 +47,7 @@ class Stage {
 
 public class Transmogrify {
     static int a = 10;
+
     public static void main(String[] args) {
         Stage stage = new Stage();
 

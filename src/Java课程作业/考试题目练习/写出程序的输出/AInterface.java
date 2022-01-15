@@ -29,6 +29,7 @@ abstract class AClass {
 
 class Leaf extends AClass implements AInterface {
     // 既然自己已经实现了，就使用自己定义好的就行
+    // 满足了就近原则
     @Override
     public int funA(int i) {
         return i * 100;
