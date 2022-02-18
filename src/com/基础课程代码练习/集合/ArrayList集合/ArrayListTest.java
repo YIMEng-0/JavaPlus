@@ -1,6 +1,8 @@
 package com.基础课程代码练习.集合.ArrayList集合;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
 
 /**
  * @author LuoBin
@@ -10,7 +12,7 @@ import java.util.ArrayList;
 public class ArrayListTest {
     // 什么是 ArrayList?
     /*
-        可以进行动态修改的数字，与普通的数组之间的区别就是，没有固定大小的限制，，进行添加以及删除元素；
+        可以进行动态修改的数字，与普通的数组之间的区别就是，没有固定大小的限制，，进行添加以及删除元素； 可以进行动态的存储元素
 
         import java.util.ArrayList; // 引入 ArrayList 类
 
@@ -41,5 +43,6 @@ public class ArrayListTest {
 
         // 用来存放整数元素
         ArrayList<Integer> numbers = new ArrayList<Integer>();
+
     }
 }
