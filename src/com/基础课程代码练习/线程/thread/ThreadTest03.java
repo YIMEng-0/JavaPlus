@@ -22,7 +22,7 @@ public class ThreadTest03 {
 //        Thread t = new Thread(r);
 
         // 上面的代码进行合并
-        Thread t = new Thread(new MyThread());
+        Thread t = new Thread(new MyRunnable());
 
         // 启动线程
         t.start();
