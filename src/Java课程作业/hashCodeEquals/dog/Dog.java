@@ -2,6 +2,8 @@ package Java课程作业.hashCodeEquals.dog;
 
 import java.util.Objects;
 
+
+// tetstetst
 public class Dog 
 {
 	private String name="noname";
