@@ -38,8 +38,6 @@ public class ClassOuter {
     }
 }
 
-
-
 class TestInnerClass {
     public static void main(String[] args) {
         //非静态内部类 创建方式1
