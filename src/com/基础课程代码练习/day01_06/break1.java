@@ -9,6 +9,8 @@ public class break1 {
         System.out.println("hello world");
         String s = "你好中国";
         System.out.println(s);
+
+
         Integer integer = new Integer(12);
         System.out.println(integer);
     }
