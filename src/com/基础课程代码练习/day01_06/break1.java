@@ -10,7 +10,6 @@ public class break1 {
         String s = "你好中国";
         System.out.println(s);
 
-
         Integer integer = new Integer(12);
         System.out.println(integer);
     }
